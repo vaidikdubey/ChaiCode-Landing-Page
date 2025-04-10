@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChaiCode</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="../ChaiCode Assets/chai-assets/chai-white.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="../public/assets/chai-assets/chai-gray.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <header>
-        <nav class="navigation">
-            <a id="" href=""><img src="../ChaiCode Assets/chai-assets/chai-white.png" alt="ChaiCode" id="ChaiImg">ChaiCode</a>
+        <nav class="navBar">
+            <a id="" href=""><img src="../public/assets/chai-assets/chaicode-white.svg" alt="ChaiCode" id="ChaiImg"></a>
 
             <div class="actions">
                 <ul>
-                    <li>Cohort <span class="liveBlinker"></span></li>
+                    <li id="cohort">Cohort <span class="liveBlinker"></span></li>
                     <li>Udemy</li>
                     <li>Docs</li>
                     <li>Reviews</li>
                 </ul>
             </div>
 
-            <button>Login</button>
+            <button id="login">Login</button>
         </nav>
     </header>
 
@@ -38,7 +38,8 @@
             </div>
             <div id="cohortsContent">
                 <button>Chech all Live Cohorts <span class="liveBlinker"></span></button>
-                <div class="video-container">
+                <img id="chaiMascot" src="../public/assets/mascots/chai-cute-mascot.png" alt="chai-mascot">
+                <div id ="cohortVideo" class="video-container">
                     <iframe 
                         src="https://www.youtube.com/embed/yG8JMlldoCE?start=0"
                         frameborder="0" 
