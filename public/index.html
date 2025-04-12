@@ -12,10 +12,26 @@
 </head>
 <body>
     <header>
-        <nav class="navBar">
-            <a id="" href=""><img src="../public/assets/chai-assets/chaicode-white.svg" alt="ChaiCode" id="ChaiImg"></a>
+        <a href="#hero"><img src="../public/assets/chai-assets/chaicode-white.svg" alt="ChaiCode" id="ChaiLogo" class="ChaiImg"></a>
+            
+        <button id="menuButton" class="menu-button">Menu</button>
 
-            <div class="actions">
+        <div id="sliderMenu" class="slider">
+            <button id="closeButton" class="close">&times;</button>
+            <ul class="slider-content">
+                <li>Cohort</li>
+                <li>Udemy</li>
+                <li>Docs</li>
+                <li>Reviews</li>
+            </ul>
+            <a href="https://courses.chaicode.com/learn/account/signin"><button id="loginSlider">Login</button></a>
+        </div>
+
+        <nav class="navBar">
+            <a id="" href="#hero"><img src="../public/assets/chai-assets/chaicode-white.svg" alt="ChaiCode" id="ChaiNavLogo" class="ChaiImg"></a>
+            
+
+            <div id="actions" class="actions">
                 <ul>
                     <li id="cohort">Cohort <span class="liveBlinker"></span></li>
                     <li>Udemy</li>
@@ -24,7 +40,7 @@
                 </ul>
             </div>
 
-            <button id="login">Login</button>
+            <a href="https://courses.chaicode.com/learn/account/signin"><button class="login">Login</button></a>
         </nav>
     </header>
 
@@ -57,6 +73,5 @@
 
 
     <script src="../src/js/script.js" defer></script>
-
 </body>
 </html>
