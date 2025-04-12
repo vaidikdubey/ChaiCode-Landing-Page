@@ -61,10 +61,11 @@ body {
   border-radius: 30px;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0px;
-  z-index: 1000;
-  flex-shrink: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
 }
 
 .actions ul{
@@ -94,7 +95,6 @@ body {
   cursor: pointer;
   background-color: #fe9000;
   transition:  all 0.2s linear;
-
 }
 
 .liveBlinker {
@@ -115,25 +115,9 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  .navBar {
-    gap: 1vw;
-  }
-
   .login {
     margin-bottom: 0.8vh;
     transition: all 0.2s linear
-  }
-}
-
-@media screen and (max-width: 576px) {
-  
-  .login {
-    margin-bottom: 1.5vh;
-    transition: all 0.2s linear
-  }
-  .liveBlinker{
-    width: 5px;
-    height: 5px;
   }
 }
 
@@ -153,7 +137,7 @@ body {
   
   .menu-button {
     display: block;
-    height: 5vh;
+    height: 3.5vh;
     width: 12vw;
     font-size: 2.5vw;
     color: black;
@@ -232,7 +216,372 @@ body {
   }
 }
 
-#chaiMascot {
-  height: 200px;
-  width: 200px;
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainContent span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: rgb(44, 44, 44);
+  border: 2px solid rgb(101, 101, 101);
+  border-radius: 2rem;
+  height: 1.5rem;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(255, 150, 50, 0.6);
+}
+
+.mainContent span::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,138,0,0.3), transparent 70%);
+  animation: glowPulse 2s infinite;
+  z-index: -1;
+}
+
+@keyframes glowPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+.mainContent span:hover {
+  background-color: rgb(60, 60, 60);
+  box-shadow: 0 0 10px rgba(255, 150, 50, 0.8);
+  transition: all 0.2s ease;
+}
+
+.mainContent span img {
+  margin: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.tagline-text {
+  background: linear-gradient(to right, #FF6A00 0%, #FE9332 50%, #FFD180 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  transition: all 0s ease;
+}
+
+@media screen and (max-width: 992px) {
+  .tagline-text {
+    font-size: 2.3rem;
+    transition: all 0s ease;
+  }
+
+  .mainContent span {
+    font-size: 0.8rem;
+    transition: all 0s ease;
+    height: 1.2rem;
+  }
+
+  .mainContent span img {
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: all 0s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tagline-text {
+    font-size: 1.8rem;
+    transition: all 0s ease;
+  }
+  
+  .mainContent span {
+    font-size: 0.6rem;
+    transition: all 0s ease;
+    height: 1rem;
+  }
+
+  .mainContent span img {
+    height: 1.2rem;
+    width: 1.2rem;
+    transition: all 0s ease;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tagline-text {
+    font-size: 1.2rem;
+    transition: all 0s ease;
+  }
+
+  .mainContent span {
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    transition: all 0s ease;
+    height: 0.6rem;
+  }
+
+  .mainContent span img {
+    height: 1rem;
+    width: 1rem;
+    transition: all 0s ease;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tagline-text {
+    font-size: 1rem;
+    transition: all 0s ease;
+  }
+
+  .mainContent span {
+    font-size: 0.4rem;
+    padding: 0.5rem;
+    transition: all 0s ease;
+    height: 0.1rem;
+  }
+
+  .mainContent span img {
+    height: 0.8rem;
+    width: 0.8rem;
+    transition: all 0s ease;
+  }
+}
+
+.mainText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  width: 50rem;
+  text-align: justify;
+  text-justify: inter-word;
+  gap: 1.5rem;
+}
+
+.mainText p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.mainText img {
+  height: 15rem;
+  width: 15rem;
+}
+
+@media screen and (max-width: 992px) {
+  .mainText {
+    height: 10rem;
+    width: 45rem;
+    gap: 1.2rem;
+    transition: all 0s ease;
+  }
+  
+  .mainText p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  
+  .mainText img {
+    height: 12rem;
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainText {
+    height: 8rem;
+    width: 40rem;
+    gap: 0.8rem;
+    transition: all 0s ease;
+  }
+  
+  .mainText p {
+    font-size: 0.7rem;
+    text-align: justify;
+  }
+  
+  .mainText img {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mainText {
+    height: 6rem;
+    width: 35rem;
+    gap: 0.6rem;
+    transition: all 0s ease;
+  }
+  
+  .mainText p {
+    font-size: 0.6rem;
+    text-align: justify;
+  }
+  
+  .mainText img {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mainText {
+    height: 5rem;
+    width: 30rem;
+    gap: 0.5rem;
+    transition: all 0s ease;
+  }
+  
+  .mainText p {
+    font-size: 0.5rem;
+    text-align: justify;
+  }
+
+  .mainText img {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mainText {
+    height: 4rem;
+    width: 25rem;
+    gap: 0.4rem;
+    transition: all 0s ease;
+  }
+  
+  .mainText p {
+    font-size: 0.4rem;
+    text-align: justify;
+  }
+
+  .mainText img {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainText {
+    height: 3rem;
+    width: 20rem;
+    gap: 0.3rem;
+    transition: all 0s ease;
+  }  
+  
+  .mainText p {
+    font-size: 0.3rem;
+    text-align: justify;
+  }
+
+  .mainText img {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.cohortsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.cohortsContent button {
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 0.6vw 0.8vw;
+  font-weight: bold;
+  background-color: #6bdaff;
+  box-shadow: 0px 0px 20px 1px #fe9332;
+  border: none;
+  font-size: 1.5rem;
+  height: 5rem;
+  width: 22rem;
+}
+
+.cohortsContent button:hover {
+  background-color: #fe9332;
+  transition: all 0.1s linear;
+  box-shadow: 0px 0px 20px 1px #6bdaff;
+}
+
+@media screen and (max-width: 992px) {
+  .cohortsContent button {
+    font-size: 1.3rem;
+    height: 4rem;
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cohortsContent button {
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cohortsContent button {
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cohortsContent button {
+    font-size: 0.8rem;
+    height: 2rem;
+    width: 12rem;
+  }
+}
+
+.video-container {
+  border: 1px solid #ffc289;
+  box-shadow: 0px 0px 4px 3px #ffc289;
+  width: 60%;
+  height: 30rem;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.video-container iframe:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
 }
