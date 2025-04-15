@@ -1,7 +1,7 @@
 const menuButton = document.querySelector('.menu-button');
 const closeButton = document.querySelector('.close');
 const sliderMenu = document.querySelector('.slider');
-const mediaQuery = window.matchMedia('(min-width: 576px)')
+const mediaQuery = window.matchMedia('(min-width: 576px)');
 
 function closeMenu(size) {
     if (size.matches) {
@@ -25,3 +25,6 @@ closeButton.addEventListener('click', () => {
     menuButton.classList.toggle('active');
     sliderMenu.classList.toggle('active');
 })
+
+let copyLogoDiv = document.querySelector('.logos-slide').cloneNode(true);
+document.querySelector('.logos').appendChild(copyLogoDiv);

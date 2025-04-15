@@ -619,17 +619,16 @@ header a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
 }
 
 .twitter p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   text-align: justify; 
   margin-bottom: 1rem;
 }
 
 .twitter h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   background: linear-gradient(to right, #FF6A00 0%, #FE9332 50%, #FFD180 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -668,4 +667,280 @@ header a {
   transform: scale(1.05);
   transition: all 0.1s linear;
   box-shadow: 0px 0px 10px 2px #fe9332;
+}
+
+@media (max-width: 1440px) {
+  .twitter-cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .twitter-tweet {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .twitter h3,
+  .twitter p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .twitter-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .twitter h3 {
+    font-size: 1.8rem;
+  }
+
+  .twitter p {
+    font-size: 0.85rem;
+  }
+
+  .twitter-tweet {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .twitter h3,
+  .twitter p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .twitter-cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .twitter h3 {
+    font-size: 1.6rem;
+  }
+
+  .twitter p {
+    font-size: 0.82rem;
+  }
+
+  .twitter-cohort-button {
+    width: 13rem;
+    height: 2.8rem;
+    font-size: medium;
+  }
+
+  .twitter-tweet {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .twitter h3,
+  .twitter p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .twitter h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .twitter p {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .twitter-cohort-button {
+    width: 12rem;
+    font-size: small;
+  }
+
+  .twitter-cards {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .twitter h3 {
+    font-size: 1.2rem;
+  }
+
+  .twitter p {
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+
+  .twitter-cohort-button {
+    width: 11rem;
+    font-size: small;
+    height: 2.5rem;
+  }
+
+  .twitter-cards {
+    padding: 0.5rem;
+  }
+}
+
+.placement-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.placement-logos p {
+  font-size: 1rem;
+  text-align: justify; 
+  margin-bottom: 1rem;
+}
+
+.logos {
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos::before,
+.logos::after {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #663f1b);
+}
+
+.logos::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #663f1b);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide-scroll infinite linear;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 20px;
+}
+
+@keyframes slide-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1440px) {
+  .placement-logos p {
+    font-size: 0.95rem;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .logos-slide img {
+    height: 90px;
+    margin: 0 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .placement-logos p {
+    font-size: 0.9rem;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .logos-slide img {
+    height: 80px;
+    margin: 0 16px;
+  }
+
+  .logos::before,
+  .logos::after {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .placement-logos p {
+    font-size: 0.85rem;
+    padding: 0 1rem;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .logos-slide img {
+    height: 70px;
+    margin: 0 14px;
+  }
+
+  .logos::before,
+  .logos::after {
+    width: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  .placement-logos p {
+    font-size: 0.8rem;
+    padding: 0 1.5rem;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .logos-slide img {
+    height: 60px;
+    margin: 0 12px;
+  }
+
+  .logos::before,
+  .logos::after {
+    width: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .placement-logos p {
+    font-size: 0.75rem;
+    padding: 0 1rem;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .logos-slide img {
+    height: 50px;
+    margin: 0 10px;
+  }
+
+  .logos::before,
+  .logos::after {
+    width: 60px;
+  }
 }
