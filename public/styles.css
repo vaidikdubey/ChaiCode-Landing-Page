@@ -944,3 +944,38 @@ header a {
     width: 60px;
   }
 }
+
+.cohorts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cohorts h3{
+  font-size: 2rem;
+  background: linear-gradient(to right, #FF6A00 0%, #FE9332 50%, #FFD180 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.cohorts p {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0.5rem;
+}
+
+.cohortCards {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  padding: 1%;
+  gap: 3%;
+  border: 1px solid #ffc289;
+  box-shadow: 0px 0px 2px 1px #ffc289;
+  margin: 2%;
+}
+
