@@ -599,8 +599,9 @@ header a {
 .video-container {
   border: 1px solid #ffc289;
   box-shadow: 0px 0px 4px 3px #ffc289;
-  width: 50%;
-  height: 25rem;
+  width: 60%;
+  height: 30rem;
+  aspect-ratio: 16/9;
 }
 
 .video-container iframe {
@@ -971,11 +972,246 @@ header a {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
+  height: max-content;
   width: 100%;
   padding: 1%;
-  gap: 3%;
-  border: 1px solid #ffc289;
-  box-shadow: 0px 0px 2px 1px #ffc289;
+  gap: 2%;
   margin: 2%;
 }
 
+.cohortVideoCards {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background-color: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid #fe9332;
+  color: white;
+  border-radius: 12px;
+  padding: 0.5rem;
+  height: 32rem;
+  overflow: hidden;
+}
+
+.cohortVideoCards:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.video-wrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.video {
+ width: 100%;
+ height: 100%;
+ aspect-ratio: 16/9;
+ cursor: pointer;
+ border: none;
+ border-radius: 0.5rem;
+ margin-bottom: 0.5rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.description {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.date {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.startDate {
+  font-size: 0.8rem;
+  text-align: justify;
+  justify-self: flex-start;
+}
+
+.duration {
+  font-size: 0.8rem;
+  text-align: justify;
+  justify-self: flex-end;
+  padding: 0 0.5rem;
+}
+
+.price {
+  border: 2px solid black;
+  padding: 5px;
+  background-color: rgb(102, 102, 102);
+  border-radius: 5px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.originalPrice {
+  font-size: 14px;
+}
+
+.discount {
+  font-size: 13px;
+}
+
+.enrollBtn {
+  border: 2px solid #fe9332;
+  border-radius: 10px;
+  height: 2rem;
+  background: linear-gradient(to right, #FF6A00 0%, #FE9332 50%, #FFD180 100%);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.enrollBtn:hover {
+  transform: scale(1.03);
+  transition: all 0.1s linear;
+}
+
+@media (max-width: 1200px) {
+  .cohortCards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .cohortCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cohorts h3 {
+    font-size: 1.8rem;
+  }
+
+  .cohorts p {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cohortCards {
+    grid-template-columns: 1fr;
+  }
+
+  .cohorts h3 {
+    font-size: 1.6rem;
+  }
+
+  .cohorts p {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .cohortCards {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .cohortVideoCards {
+    height: auto;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .startDate,
+  .duration {
+    font-size: 0.75rem;
+  }
+
+  .enrollBtn {
+    font-size: 1rem;
+    height: 1.8rem;
+  }
+
+  .cohorts h3 {
+    font-size: 1.4rem;
+  }
+
+  .cohorts p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cohortCards {
+    margin: 1rem;
+  }
+
+  .cohorts h3 {
+    font-size: 1.2rem;
+  }
+
+  .cohorts p {
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 0.95rem;
+  }
+
+  .description {
+    font-size: 0.75rem;
+  }
+
+  .startDate,
+  .duration {
+    font-size: 0.7rem;
+  }
+
+  .price {
+    font-size: 0.85rem;
+  }
+
+  .originalPrice,
+  .discount {
+    font-size: 12px;
+  }
+
+  .enrollBtn {
+    font-size: 0.95rem;
+    height: 1.6rem;
+  }
+}
