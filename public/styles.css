@@ -1215,3 +1215,102 @@ header a {
     height: 1.6rem;
   }
 }
+
+.udemy-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid white;
+  padding: 1rem;
+}
+
+.udemy-section h3 {
+  font-size: 2rem;
+  background: linear-gradient(to right, #FF6A00 0%, #FE9332 50%, #FFD180 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.udemy-section p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.udemy-courses-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.udemy-courses-section svg {
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.udemy-courses-section svg:hover {
+  transform: scale(1.2);
+}
+
+.udemy-course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 1rem;
+}
+
+.udemy-title {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.udemy-description {
+  display: block;
+  font-size: 1rem;
+  text-align: left;
+  overflow: hidden;
+  max-width: 35rem;
+  word-wrap: break-word;
+  font-size: 0.8rem;
+}
+
+.udemy-rating-section {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.top-rated {
+  font-size: 0.7rem;
+}
+
+.udemy-price-section {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.udemy-price {
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+.udemy-actual-price {
+  font-size: 0.8rem;
+}
+
+.udemy-discount {
+  font-size: 1rem;  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
