@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
 }
 
 body {
@@ -13,28 +13,28 @@ body {
   background-position: center;
   background-attachment: fixed; */
   color: white !important;
-  background: linear-gradient(to right, #fe9332 -50%,  #0e0e0e 30%, #fe9332 250%);
+  background: linear-gradient(
+    to right,
+    #fe9332 -50%,
+    #0e0e0e 30%,
+    #fe9332 250%
+  );
 }
 
 .section-divider {
   height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #fe9332,
-    transparent
-  );
-  width: 80%;   
+  background: linear-gradient(to right, transparent, #fe9332, transparent);
+  width: 80%;
   margin: 2rem auto;
   border: none;
   opacity: 0.6;
 }
 
 .ChaiImg {
-    height: 5vh;
-    width: 8vw;
-    padding-top: 6px;
-    align-self: center;
+  height: 5vh;
+  width: 8vw;
+  padding-top: 6px;
+  align-self: center;
 }
 
 #ChaiLogo {
@@ -52,11 +52,10 @@ body {
   background-color: #fe9332;
 }
 
-
 .menu-button:hover {
   cursor: pointer;
   background-color: #fe6000;
-  transition:  all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .slider {
@@ -81,7 +80,7 @@ body {
 .navBar div ul li:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition:  all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 header a {
@@ -92,7 +91,7 @@ header a {
   color: white;
 }
 
-.actions ul{
+.actions ul {
   display: flex;
   list-style: none;
   gap: 2vw;
@@ -101,11 +100,11 @@ header a {
   font-size: 1.3vw;
 }
 
-#cohort{
+#cohort {
   font-weight: bold;
 }
 
-.login{
+.login {
   border-radius: 16px;
   padding: 0.6vw 1.4vw;
   font-weight: bold;
@@ -115,34 +114,39 @@ header a {
   font-size: 0.9vw;
 }
 
-.login:hover{
+.login:hover {
   cursor: pointer;
   background-color: #fe9000;
   transform: scale(1.1);
-  transition:  all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .liveBlinker {
-    display: inline-block;
-    margin-left: 4px;
-    width: 12px;
-    height: 12px;
-    background-color: red;
-    border-radius: 50%;
-    margin-right: 6px;
-    animation: blink 1s infinite;
-    vertical-align: middle;
+  display: inline-block;
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 6px;
+  animation: blink 1s infinite;
+  vertical-align: middle;
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .login {
     margin-bottom: 0.8vh;
-    transition: all 0.2s linear
+    transition: all 0.2s linear;
   }
 }
 
@@ -159,7 +163,7 @@ header a {
     height: 10vh;
     width: 100%;
   }
-  
+
   .menu-button {
     display: block;
     height: 3.5vh;
@@ -174,7 +178,7 @@ header a {
     width: 35vw;
   }
 
-  .slider{
+  .slider {
     background-color: #0f0f0f;
     color: #f5f5f5;
     height: 30vh;
@@ -196,8 +200,8 @@ header a {
     cursor: pointer;
     color: #fe9332;
   }
-  
-  .close{
+
+  .close {
     height: 2rem;
     width: 2rem;
     background-color: #0f0f0f;
@@ -213,13 +217,13 @@ header a {
     cursor: pointer;
     color: #fe9332;
   }
-  
-  .slider.active{
+
+  .slider.active {
     z-index: 10;
     right: 0px;
     border-radius: 5px;
   }
-  
+
   .menu-button-active {
     display: none;
   }
@@ -273,14 +277,14 @@ header a {
 }
 
 .mainContent span::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -10px;
   left: -10px;
   width: calc(100% + 20px);
   height: calc(100% + 20px);
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,138,0,0.3), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 138, 0, 0.3), transparent 70%);
   animation: glowPulse 2s infinite;
   z-index: -1;
 }
@@ -313,7 +317,7 @@ header a {
 }
 
 .tagline-text {
-  background: linear-gradient(to right, #FF6A00 0%, #FE9332 50%, #FFD180 100%);
+  background: linear-gradient(to right, #ff6a00 0%, #fe9332 50%, #ffd180 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -346,7 +350,7 @@ header a {
     font-size: 1.8rem;
     transition: all 0s ease;
   }
-  
+
   .mainContent span {
     font-size: 0.6rem;
     transition: all 0s ease;
@@ -428,12 +432,12 @@ header a {
     gap: 1.2rem;
     transition: all 0s ease;
   }
-  
+
   .mainText p {
     font-size: 0.8rem;
     text-align: justify;
   }
-  
+
   .mainText img {
     height: 12rem;
     width: 12rem;
@@ -447,12 +451,12 @@ header a {
     gap: 0.8rem;
     transition: all 0s ease;
   }
-  
+
   .mainText p {
     font-size: 0.7rem;
     text-align: justify;
   }
-  
+
   .mainText img {
     height: 10rem;
     width: 10rem;
@@ -466,12 +470,12 @@ header a {
     gap: 0.6rem;
     transition: all 0s ease;
   }
-  
+
   .mainText p {
     font-size: 0.6rem;
     text-align: justify;
   }
-  
+
   .mainText img {
     height: 8rem;
     width: 8rem;
@@ -485,7 +489,7 @@ header a {
     gap: 0.5rem;
     transition: all 0s ease;
   }
-  
+
   .mainText p {
     font-size: 0.5rem;
     text-align: justify;
@@ -504,7 +508,7 @@ header a {
     gap: 0.4rem;
     transition: all 0s ease;
   }
-  
+
   .mainText p {
     font-size: 0.4rem;
     text-align: justify;
@@ -522,8 +526,8 @@ header a {
     width: 20rem;
     gap: 0.3rem;
     transition: all 0s ease;
-  }  
-  
+  }
+
   .mainText p {
     font-size: 0.3rem;
     text-align: justify;
@@ -624,13 +628,13 @@ header a {
 
 .twitter p {
   font-size: 0.9rem;
-  text-align: justify; 
+  text-align: justify;
   margin-bottom: 1rem;
 }
 
 .twitter h3 {
   font-size: 2rem;
-  background: linear-gradient(to right, #FF6A00 0%, #FE9332 50%, #FFD180 100%);
+  background: linear-gradient(to right, #ff6a00 0%, #fe9332 50%, #ffd180 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -672,7 +676,7 @@ header a {
 
 @media (max-width: 1440px) {
   .twitter-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
     max-width: 100%;
     overflow: hidden;
@@ -691,7 +695,7 @@ header a {
 
 @media (max-width: 1024px) {
   .twitter-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 1.5rem;
     max-width: 100%;
@@ -719,7 +723,7 @@ header a {
 
 @media (max-width: 768px) {
   .twitter-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
     max-width: 100%;
     overflow: hidden;
@@ -751,6 +755,13 @@ header a {
 }
 
 @media (max-width: 425px) {
+  .twitter-cards {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.8rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
   .twitter h3 {
     font-size: 1.4rem;
     text-align: center;
@@ -803,7 +814,7 @@ header a {
 
 .placement-logos p {
   font-size: 1rem;
-  text-align: justify; 
+  text-align: justify;
   margin-bottom: 1rem;
 }
 
@@ -953,9 +964,9 @@ header a {
   align-items: center;
 }
 
-.cohorts h3{
+.cohorts h3 {
   font-size: 2rem;
-  background: linear-gradient(to right, #FF6A00 0%, #FE9332 50%, #FFD180 100%);
+  background: linear-gradient(to right, #ff6a00 0%, #fe9332 50%, #ffd180 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1004,13 +1015,13 @@ header a {
 }
 
 .video {
- width: 100%;
- height: 100%;
- aspect-ratio: 16/9;
- cursor: pointer;
- border: none;
- border-radius: 0.5rem;
- margin-bottom: 0.5rem;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .card-content {
@@ -1072,7 +1083,7 @@ header a {
   border: 2px solid #fe9332;
   border-radius: 10px;
   height: 2rem;
-  background: linear-gradient(to right, #FF6A00 0%, #FE9332 50%, #FFD180 100%);
+  background: linear-gradient(to right, #ff6a00 0%, #fe9332 50%, #ffd180 100%);
   font-weight: 600;
   cursor: pointer;
   font-size: 1.2rem;
@@ -1222,13 +1233,12 @@ header a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid white;
   padding: 1rem;
 }
 
 .udemy-section h3 {
   font-size: 2rem;
-  background: linear-gradient(to right, #FF6A00 0%, #FE9332 50%, #FFD180 100%);
+  background: linear-gradient(to right, #ff6a00 0%, #fe9332 50%, #ffd180 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1248,6 +1258,12 @@ header a {
 }
 
 .udemy-courses-section svg {
+  border: 2px solid darkgray;
+  background-color: rgb(52, 52, 52);
+  border-radius: 2rem;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.5rem;
   margin: 0.5rem;
   cursor: pointer;
   transition: all 0.2s linear;
@@ -1255,35 +1271,74 @@ header a {
 
 .udemy-courses-section svg:hover {
   transform: scale(1.2);
+  transition: all 0.2s linear;
+  background-color: rgb(42, 42, 42);
 }
 
 .udemy-course {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-  margin: 1rem;
+  padding: 1.5rem;
+  gap: 1rem;
+  height: 25rem;
+  background: linear-gradient(120deg, #161616, #202020, #2c1f17);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 105%;
+  background-color: rgba(255, 147, 50, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 147, 50, 0.3);
+  border-radius: 12px;
+  gap: 0.7rem;
+  padding: 0.3rem;
+}
+
+.course-info:hover {
+  transform: scale(1.05);
 }
 
 .udemy-title {
-  font-size: 1.5rem;
-  text-align: left;
+  font-size: 2rem;
+  text-align: center;
+  color: #dcb28a;
+  animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    text-shadow: 0 0 0px rgba(255, 139, 38, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 6px rgba(255, 139, 38, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 0px rgba(255, 139, 38, 0.4);
+  }
 }
 
 .udemy-description {
   display: block;
   font-size: 1rem;
   text-align: left;
-  overflow: hidden;
   max-width: 35rem;
   word-wrap: break-word;
-  font-size: 0.8rem;
+  text-align: justify;
 }
 
 .udemy-rating-section {
-  display: flex;
   gap: 0.5rem;
-  align-items: center;
+  display: inline;
+  align-self: flex-start;
+  width: 40%;
+  text-align: left;
 }
 
 .top-rated {
@@ -1291,26 +1346,208 @@ header a {
 }
 
 .udemy-price-section {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: baseline;
-  align-items: center;
+  display: inline;
+  align-self: flex-start;
+  justify-self: center;
+  width: 50%;
+  text-align: left;
 }
 
 .udemy-price {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 550;
+  padding-right: 1rem;
+  background: linear-gradient(135deg, #fe9332, #ffb877);
+  color: #0e0e0e;
+  border-radius: 0.2rem;
+  padding-left: 5px;
 }
 
 .udemy-actual-price {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .udemy-discount {
-  font-size: 1rem;  
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.udemy-btn {
+  background: linear-gradient(to right, #fe9332 50%, #ffb877 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: 2px solid #fe9332;
+  border-radius: 1rem;
+  width: 90%;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  transition: background-position 0.3s ease-in-out;
+}
+
+.udemy-btn:hover {
+  background-position: left bottom;
+  transition: background-position 0.3s ease-in-out;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.course-video {
+  width: 50%;
+  height: 105%;
+  aspect-ratio: 16/9;
+  border: 1px solid rgba(255, 147, 50, 0.3);
+  border-radius: 1rem;
+}
+
+.course-video:hover {
+  transform: scale(1.05);
+}
+
+.course-video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1rem;
+  aspect-ratio: 16/9;
+}
+
+strike {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: black;
+}
+
+@media (max-width: 1200px) {
+  .udemy-course {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .course-info {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .course-video {
+    width: 90%;
+    height: auto;
+  }
+
+  .udemy-description {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  .udemy-rating-section,
+  .udemy-price-section {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .udemy-course {
+    flex-direction: column;
+    height: auto;
+    gap: 1.5rem;
+  }
+
+  .course-info {
+    width: 85%;
+  }
+
+  .course-video {
+    width: 85%;
+  }
+
+  .udemy-description {
+    font-size: 0.95rem;
+  }
+
+  .udemy-btn {
+    width: 100%;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .udemy-section {
+    padding: 2rem;
+  }
+
+  .udemy-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .udemy-courses-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .udemy-courses-section svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .udemy-description {
+    font-size: 0.9rem;
+  }
+
+  .udemy-price {
+    font-size: 1.2rem;
+  }
+
+  .course-info {
+    width: 100%;
+  }
+
+  .course-video {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .udemy-section {
+    padding: 1rem;
+  }
+
+  .udemy-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .udemy-description {
+    font-size: 0.85rem;
+  }
+
+  .udemy-price {
+    font-size: 1.2rem;
+  }
+
+  .course-info {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .course-video {
+    width: 100%;
+    margin-top: 1rem;
+    height: auto;
+  }
+
+  .udemy-btn {
+    width: 100%;
+    height: 3rem;
+  }
 }
