@@ -1551,3 +1551,390 @@ strike {
     height: 3rem;
   }
 }
+
+.cohort-benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.cohort-benefits h3 {
+  font-size: 2rem;
+  background: linear-gradient(to right, #ff6a00 0%, #fe9332 50%, #ffd180 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.cohort-benefits p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.cohort-benefit-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 85vw;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.benefit-card h4 {
+  font-size: 1.2rem;
+  margin: 1.25rem 0 0.5rem;
+  color: #fff;
+}
+
+.benefit-card h4 img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.benefit-card p {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0.5rem 0 0;
+}
+
+@media (max-width: 1024px) {
+  .cohort-benefit-cards {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+
+  .cohort-benefits h3 {
+    font-size: 1.8rem;
+  }
+
+  .cohort-benefits p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cohort-benefit-cards {
+    grid-template-columns: repeat(1, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .cohort-benefits {
+    margin: 2rem;
+  }
+
+  .cohort-benefits h3 {
+    font-size: 1.6rem;
+  }
+
+  .cohort-benefits p {
+    font-size: 0.9rem;
+  }
+
+  .benefit-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .benefit-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cohort-benefits {
+    margin: 1.5rem;
+  }
+
+  .cohort-benefits h3 {
+    font-size: 1.4rem;
+  }
+
+  .cohort-benefits p {
+    font-size: 0.85rem;
+  }
+
+  .benefit-card h4 {
+    font-size: 1rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.85rem;
+  }
+
+  .benefit-card h4 img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+}
+
+.alumni-network-content {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 3rem;
+}
+
+.alumni-network h3 {
+  font-size: 2rem;
+  background: linear-gradient(to right, #ff6a00 0%, #fe9332 50%, #ffd180 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+.alumni-network-content span {
+  align-self: center;
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #fff;
+  width: 100%;
+  max-width: 80%;
+}
+
+.floating-box {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: 2rem;
+  float: left;
+  border-radius: 20px;
+  overflow: hidden;
+  background: radial-gradient(circle at top left, #2a2a40, #0f0f1a);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.float-item {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .alumni-network-content {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1.5rem;
+  }
+
+  .alumni-network h3 {
+    font-size: 1.8rem;
+  }
+
+  .alumni-network-content span {
+    font-size: 1.1rem;
+    margin-left: 3rem;
+    max-width: 90%;
+  }
+
+  .floating-box {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 5 / 3;
+    float: none;
+    margin: 1.5rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .alumni-network-content {
+    margin: 1rem;
+    gap: 1.5rem;
+  }
+
+  .alumni-network h3 {
+    font-size: 1.6rem;
+  }
+
+  .alumni-network-content span {
+    font-size: 1rem;
+    margin-left: 2rem;
+    max-width: 95%;
+  }
+
+  .floating-box {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5 / 3;
+    margin: 1rem auto;
+  }
+
+  .float-item {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .alumni-network h3 {
+    font-size: 1.4rem;
+  }
+
+  .alumni-network-content span {
+    font-size: 0.95rem;
+    margin-left: 1rem;
+    max-width: 100%;
+  }
+
+  .float-item {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.topics h3 {
+  font-size: 2rem;
+  background: linear-gradient(to right, #ff6a00 0%, #fe9332 50%, #ffd180 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  align-self: center;
+  text-align: center;
+}
+
+.topics p {
+  margin: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.topics-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.topics div a button {
+  cursor: pointer;
+  border: none;
+  height: 6.5rem;
+  width: 10rem;
+  margin: 2rem 1rem;
+  background: radial-gradient(circle at top, #fa8313, #b54e00);
+  border-radius: 12px;
+  border-top: 10px solid #ffb96a;
+  padding: 1.5rem;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.topics div a button:hover {
+  box-shadow: 0 0 10px #fe9332;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .topics h3 {
+    font-size: 1.75rem;
+  }
+
+  .topics p {
+    font-size: 1.1rem;
+  }
+
+  .topics div a button {
+    height: 5.5rem;
+    width: 9rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .topics h3 {
+    font-size: 1.5rem;
+  }
+
+  .topics p {
+    font-size: 1rem;
+  }
+
+  .topics div a button {
+    height: 5rem;
+    width: 8rem;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topics h3 {
+    font-size: 1.25rem;
+  }
+
+  .topics p {
+    font-size: 0.95rem;
+  }
+
+  .topics div a button {
+    height: 4.5rem;
+    width: 7.5rem;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .topics h3 {
+    font-size: 1rem;
+  }
+
+  .topics p {
+    font-size: 0.9rem;
+  }
+
+  .topics div a button {
+    height: 4rem;
+    width: 7rem;
+    font-size: 11px;
+  }
+}
