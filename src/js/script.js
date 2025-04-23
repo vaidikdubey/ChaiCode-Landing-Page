@@ -70,6 +70,31 @@ function animate() {
 animate();
 
 // Return back to same scroll position from redirected website
-window.addEventListener('beforeunload', () => {
-    sessionStorage.setItem('scrollPosition', window.scrollY)
-})
+window.addEventListener("beforeunload", () => {
+  sessionStorage.setItem("scrollPosition", window.scrollY);
+});
+
+//Udemy cards slider functionality with arrows
+const courses = document.querySelectorAll(".udemy-course");
+const backArrow = document.getElementById("udemy-svg-back");
+const nextArrow = document.getElementById("udemy-svg-next");
+
+let currentIndex = 0;
+
+function updateCoursesDisplay() {
+  courses.forEach((course, index) => {
+    course.style.display = index === currentIndex ? "flex" : "none";
+  });
+}
+
+updateCoursesDisplay();
+
+backArrow.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + courses.length) % courses.length;
+  updateCoursesDisplay();
+});
+
+nextArrow.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % courses.length;
+  updateCoursesDisplay();
+});
