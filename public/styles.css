@@ -2450,6 +2450,7 @@ strike {
   padding: 2px;
   background: linear-gradient(135deg, #ffd180, #fe9332, #ff7b00);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   opacity: 0;
