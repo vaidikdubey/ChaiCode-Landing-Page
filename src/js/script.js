@@ -117,3 +117,13 @@ nextArrow.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % courses.length;
   updateCoursesDisplay();
 });
+
+//Footer Button Scroll to Top
+const footerButton = document.getElementById("footerBtn");
+
+footerButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+})
