@@ -1,3 +1,15 @@
+//Loading screen functionality
+
+const preloader = document.getElementById('loading-screen');
+
+window.addEventListener("load", () => {
+  preloader.classList.add('fade-out');
+  
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 1000)
+})
+
 //Scroll to top arrow functionality
 const scrollToTop = document.querySelector(".scroll-to-top");
 
