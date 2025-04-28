@@ -6,12 +6,6 @@
 }
 
 body {
-  /* min-height: 100vh;
-  background-image: url('../public/assets/backgrounds/bg-b.jpg');
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed; */
   color: white !important;
   background: linear-gradient(
     to right,
@@ -20,6 +14,7 @@ body {
     #fe9332 250%
   );
   overflow-x: hidden;
+  cursor: url("./assets/cursor/cursor.svg") 4 4, auto;
 }
 
 #loading-screen {
@@ -699,6 +694,10 @@ header a {
 .mainText img {
   height: 15rem;
   width: 15rem;
+}
+
+#chaiMascot {
+  cursor: grab;
 }
 
 @media screen and (max-width: 992px) {
