@@ -22,7 +22,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 105%;
   background: radial-gradient(circle at center, #000000 0%, #1a1a1a 100%);
   display: flex;
   justify-content: center;
@@ -411,7 +411,8 @@ header a {
 
   .menu-button {
     display: block;
-    height: 3.5vh;
+    height: 4vh;
+    text-align: center;
     width: 12vw;
     font-size: 2.5vw;
     color: black;
@@ -426,8 +427,8 @@ header a {
   .slider {
     background-color: #0f0f0f;
     color: #f5f5f5;
-    height: 30vh;
-    width: 50%;
+    height: 15vh;
+    width: 30%;
     max-width: 450px;
     position: fixed;
     padding-left: 2.3rem;
@@ -437,8 +438,12 @@ header a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     transition: 0.3s ease;
+  }
+
+  .slider ul li {
+    font-size: 1rem;
   }
 
   .slider ul li:hover {
@@ -447,8 +452,8 @@ header a {
   }
 
   .close {
-    height: 2rem;
-    width: 2rem;
+    height: 0.8rem;
+    width: 0.8rem;
     background-color: #0f0f0f;
     color: #f5f5f5;
     cursor: pointer;
@@ -475,20 +480,49 @@ header a {
 
   #loginSlider {
     border-radius: 16px;
-    margin-top: 1rem;
-    height: 2rem;
+    margin-top: 0.5rem;
+    height: 1.5rem;
     width: 5rem;
     align-self: center;
     font-weight: bold;
     background-color: #fe9332;
     color: black;
     border: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   #loginSlider:hover {
     cursor: pointer;
     background-color: #feed00;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .slider {
+    height: 12vh;
+  }
+
+  .slider ul li {
+    font-size: 0.7rem;
+  }
+
+  #loginSlider {
+    height: 1rem;
+    width: 4rem;
+    font-size: 0.6rem;
+    margin-top: 0;
+  }
+
+  .close {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #0f0f0f;
+    color: #f5f5f5;
+    cursor: pointer;
+    border: none;
+    font-size: 1.3rem;
+    padding-right: 1.5rem;
+    align-self: flex-end;
   }
 }
 
@@ -2026,6 +2060,12 @@ strike {
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 1700px) {
+  .alumni-network {
+    height: clamp(22vh, 24vh, 26vh);
+  }
 }
 
 @media (max-width: 1024px) {
