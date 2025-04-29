@@ -353,8 +353,6 @@ header a {
   transition: all 0.1s linear;
 }
 
-/* Removed LiveBlinker code */
-
 @media screen and (max-width: 992px) {
   .login {
     margin-bottom: 0.8vh;
@@ -393,8 +391,8 @@ header a {
   .slider {
     background-color: #0f0f0f;
     color: #f5f5f5;
-    height: 30vh;
-    width: 50%;
+    height: 25vh;
+    width: 30%;
     max-width: 450px;
     position: fixed;
     padding-left: 2.3rem;
@@ -404,7 +402,7 @@ header a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     transition: 0.3s ease;
   }
 
@@ -456,6 +454,35 @@ header a {
   #loginSlider:hover {
     cursor: pointer;
     background-color: #feed00;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .slider {
+    height: 20vh;
+  }
+
+  .slider ul li {
+    font-size: 0.7rem;
+  }
+
+  #loginSlider {
+    height: 1rem;
+    width: 4rem;
+    font-size: 0.6rem;
+    margin-top: 0;
+  }
+
+  .close {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #0f0f0f;
+    color: #f5f5f5;
+    cursor: pointer;
+    border: none;
+    font-size: 1.3rem;
+    padding-right: 1.5rem;
+    align-self: flex-end;
   }
 }
 
