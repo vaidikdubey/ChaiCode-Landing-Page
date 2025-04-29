@@ -2250,10 +2250,17 @@ strike {
     font-size: 0.9rem;
   }
 
+  .topics div a {
+    text-decoration: none;
+  }
+
   .topics div a button {
     height: 4rem;
     width: 7rem;
     font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
