@@ -17,7 +17,7 @@ body {
   cursor: url("./assets/cursor/cursor.svg") 4 4, auto;
 }
 
-#loading-screen {
+/* #loading-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -257,7 +257,7 @@ body {
     width: 6px;
     height: 12px;
   }
-}
+} */
 
 .section-divider {
   height: 1px;
