@@ -427,7 +427,7 @@ header a {
   .slider {
     background-color: #0f0f0f;
     color: #f5f5f5;
-    height: 25vh;
+    height: 35vh;
     width: 30%;
     max-width: 450px;
     position: fixed;
@@ -499,7 +499,7 @@ header a {
 
 @media screen and (max-width: 450px) {
   .slider {
-    height: 12vh;
+    height: 35vh;
   }
 
   .slider ul li {
