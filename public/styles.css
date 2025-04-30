@@ -756,7 +756,7 @@ header a {
   padding: 3px;
   border-radius: 1rem;
   background-image: conic-gradient(from var(--angle), transparent, rgba(0, 255, 255, 0.618));
-  animation: 2s spin linear infinite;
+  animation: 3s spin linear infinite;
 }
 
 .mainText button::before {
