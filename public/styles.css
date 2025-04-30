@@ -17,6 +17,10 @@ body {
   cursor: url("./assets/cursor/cursor.svg") 4 4, auto;
 }
 
+button {
+  color: black !important;
+}
+
 #loading-screen {
   position: fixed;
   top: 0;
