@@ -2646,6 +2646,7 @@ strike {
   .icon-container {
     margin-right: 0;
     margin-bottom: 1rem;
+    width: 80px;
   }
 
   .community-content h3 {
@@ -2673,7 +2674,8 @@ strike {
 
   .icon-container {
     flex: 0 0 64px;
-    height: 64px;
+    height: 55px;
+    width: 60px;
   }
 
   .icon-container img {
@@ -2706,7 +2708,8 @@ strike {
 
   .icon-container {
     flex: 0 0 56px;
-    height: 56px;
+    height: 50px;
+    width: 60px;
   }
 
   .icon-container img {
@@ -3266,6 +3269,12 @@ footer a {
   }
 }
 
+@media (max-width: 1100px) {
+  .chaicode-name-footer {
+    font-size: 11rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .footer-container {
     flex-direction: column;
@@ -3282,6 +3291,12 @@ footer a {
   }
 }
 
+@media (max-width: 855px) {
+  .chaicode-name-footer {
+    font-size: 8rem;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-content img {
     width: 150px;
@@ -3293,13 +3308,22 @@ footer a {
     height: 40px;
   }
 
-  .navigation-links {
-    flex-direction: column;
-    align-items: center;
+  .navigation-links div a p {
+    font-size: 0.8rem;
   }
 
   .chaicode-name-footer {
     font-size: 6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .chaicode-name-footer {
+    font-size: 5rem;
+  }
+
+  .navigation-links div a p {
+    font-size: 0.7rem;
   }
 }
 
