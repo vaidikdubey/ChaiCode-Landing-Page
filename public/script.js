@@ -30,7 +30,6 @@ scrollToTop.addEventListener('click', () => {
 })
 
 //Menu button functionality
-
 const menuButton = document.querySelector(".menu-button");
 const closeButton = document.querySelector(".close");
 const sliderMenu = document.querySelector(".slider");
@@ -57,6 +56,13 @@ menuButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   menuButton.classList.toggle("active");
   sliderMenu.classList.toggle("active");
+});
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 100) {
+    menuButton.classList.remove('active');
+    sliderMenu.classList.remove('active');
+  }
 });
 
 let copyLogoDiv = document.querySelector(".logos-slide").cloneNode(true);
