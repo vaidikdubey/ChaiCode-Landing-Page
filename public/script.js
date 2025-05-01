@@ -1,5 +1,4 @@
 //Loading screen functionality
-
 const preloader = document.getElementById('loading-screen');
 
 window.addEventListener("load", () => {
