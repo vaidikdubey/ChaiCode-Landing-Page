@@ -423,7 +423,7 @@ header a {
     width: 30%;
     max-width: 450px;
     position: fixed;
-    padding-left: 2.3rem;
+    padding-left: 1.5rem;
     top: 0px;
     right: -450px;
     display: flex;
@@ -435,7 +435,8 @@ header a {
   }
 
   .slider ul li {
-    font-size: 1rem;
+    padding-bottom: 0.4rem;
+    font-size: 0.8rem;
   }
 
   .slider ul li:hover {
@@ -473,14 +474,14 @@ header a {
   #loginSlider {
     border-radius: 16px;
     margin-top: 0.5rem;
-    height: 1.5rem;
-    width: 5rem;
+    height: 1.3rem;
+    width: 4rem;
     align-self: center;
     font-weight: bold;
     background-color: #fe9332;
     color: black;
     border: none;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   #loginSlider:hover {
@@ -492,9 +493,12 @@ header a {
 @media screen and (max-width: 450px) {
   .slider {
     height: 20vh;
+    padding-left: 1.3rem;
+    padding-right: 0.5rem;
   }
 
   .slider ul li {
+    padding-bottom: 0.4rem;
     font-size: 0.7rem;
   }
 
