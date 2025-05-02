@@ -23,8 +23,8 @@ window.addEventListener("load", async () => {
 
   // Floating animation
   if (document.querySelector(".float-item")) {
-    const { initFloatingImages } = await import("./floatingImages.js");
-    initFloatingImages();
+    const { initFloatingImage } = await import("./floatingImages.js");
+    initFloatingImage();
   }
 
   // Udemy slider
