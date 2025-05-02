@@ -30,8 +30,22 @@
     <link rel="icon" type="image/x-icon" href="/assets/chai-assets/chai-gray.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            color: white !important;
+            background: linear-gradient(
+                to right,
+                #fe9332 -50%,
+                #0e0e0e 30%,
+                #fe9332 250%
+            );
+            overflow-x: hidden;
+            cursor: url("./assets/cursor/cursor.svg") 4 4, auto;
+        }
+    </style>
 </head>
 <body>
 
@@ -54,35 +68,35 @@
     </div>
       
     <header>
-        <a href="https://courses.chaicode.com/learn"><img src="/assets/chai-assets/chaicode-white.svg" alt="ChaiCode" id="ChaiLogo" class="ChaiImg" loading="lazy"></a>
+        <a href="https://courses.chaicode.com/learn" aria-label="ChaiCode"><img src="/assets/chai-assets/chaicode-white.svg" alt="ChaiCode" id="ChaiLogo" class="ChaiImg" loading="lazy"></a>
             
         <button id="menuButton" class="menu-button">Menu</button>
 
         <div id="sliderMenu" class="slider">
             <button id="closeButton" class="close">&times;</button>
             <ul class="slider-content">
-                <a href="#cohortSection"><li>Cohort</li></a>
-                <a href="#udemy"><li>Udemy</li></a>
-                <a href="https://docs.chaicode.com/"><li>Docs</li></a>
-                <a href="reviews.html"><li>Reviews</li></a>
+                <a href="#cohortSection" aria-label="CohortButton"><li>Cohort</li></a>
+                <a href="#udemy" aria-label="UdemyButton"><li>Udemy</li></a>
+                <a href="https://docs.chaicode.com/" aria-label="DocsButton"><li>Docs</li></a>
+                <a href="reviews.html" aria-label="ReviewsButton"><li>Reviews</li></a>
             </ul>
-            <a href="https://courses.chaicode.com/learn/account/signin"><button id="loginSlider">Login</button></a>
+            <a href="https://courses.chaicode.com/learn/account/signin" aria-label="LoginButton"><button id="loginSlider">Login</button></a>
         </div>
 
         <nav class="navBar">
-            <a id="" href="https://courses.chaicode.com/learn"><img src="/assets/chai-assets/chaicode-white.svg" alt="ChaiCode" id="ChaiNavLogo" class="ChaiImg" loading="lazy"></a>
+            <a id="" href="https://courses.chaicode.com/learn" aria-label="ChaiCode"><img src="/assets/chai-assets/chaicode-white.svg" alt="ChaiCode" id="ChaiNavLogo" class="ChaiImg" loading="lazy"></a>
             
 
             <div id="actions" class="actions">
                 <ul>
-                    <a href="#cohortSection"><li id="cohort">Cohort <span class="liveBlinker"></span></li></a>
-                    <a href="#udemy"><li>Udemy</li></a>
-                    <a href="https://docs.chaicode.com/"><li>Docs</li></a>
-                    <a href="reviews.html"><li>Reviews</li></a>
+                    <a href="#cohortSection"><li id="cohort" aria-label="CohortButton">Cohort <span class="liveBlinker"></span></li></a>
+                    <a href="#udemy" aria-label="UdemyButton"><li>Udemy</li></a>
+                    <a href="https://docs.chaicode.com/" aria-label="DocsButton"><li>Docs</li></a>
+                    <a href="reviews.html" aria-label="ReviewsButton"><li>Reviews</li></a>
                 </ul>
             </div>
 
-            <a href="https://courses.chaicode.com/learn/account/signin"><button class="login">Login</button></a>
+            <a href="https://courses.chaicode.com/learn/account/signin" aria-label="LoginButton"><button class="login">Login</button></a>
         </nav>
     </header>
 
@@ -112,7 +126,7 @@
                 </div>
             </div>
             <div class="cohortsContent">
-                <a href="https://courses.chaicode.com/learn"><button>Check All Live Cohorts <span class="liveBlinker"></span></button></a>
+                <a href="https://courses.chaicode.com/learn" aria-label="CTAButton"><button>Check All Live Cohorts <span class="liveBlinker"></span></button></a>
             </div>
             <div id ="cohortVideo" class="video-container">
                 <iframe 
@@ -128,20 +142,20 @@
         <div class="section-divider"></div>
 
         <section class="twitter">
-            <p>Our community’s warmth shines through every tweet. Join the movement and let’s keep spreading the love far and wide.</p>
             <h3>Tweeting from the Heart</h3>
+            <p>Our community’s warmth shines through every tweet. Join the movement and let’s keep spreading the love far and wide.</p>
 
             <div class="twitter-cards" loading="lazy">
 
-                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Thank you will be a very small word for you all. I can&#39;t express my love and respect for you all in words. I had never heard or joined any bootcamp who gave away the fees of a student just to motivate other students and this can only be done in our WebDev Cohort-1 by Hitesh Sir❤️ <a href="https://t.co/2YvFpjzJyO">pic.twitter.com/2YvFpjzJyO</a></p>&mdash; prasenjit basu (@prasenjitbasu44) <a href="https://twitter.com/prasenjitbasu44/status/1906393735203836076?ref_src=twsrc%5Etfw">March 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Thank you will be a very small word for you all. I can&#39;t express my love and respect for you all in words. I had never heard or joined any bootcamp who gave away the fees of a student just to motivate other students and this can only be done in our WebDev Cohort-1 by Hitesh Sir❤️ <a href="https://t.co/2YvFpjzJyO" aria-label="TweetLink">pic.twitter.com/2YvFpjzJyO</a></p>&mdash; prasenjit basu (@prasenjitbasu44) <a href="https://twitter.com/prasenjitbasu44/status/1906393735203836076?ref_src=twsrc%5Etfw" aria-label="TweetLink">March 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Feeling super blessed to receive a prize from Hitesh sir ! Now my motivation level is officially higher than my phone’s screen time 😁. <br>Thank you sir !<a href="https://twitter.com/Hiteshdotcom?ref_src=twsrc%5Etfw">@Hiteshdotcom</a> <a href="https://twitter.com/piyushgarg_dev?ref_src=twsrc%5Etfw">@piyushgarg_dev</a> <a href="https://t.co/tyIxF4nyJD">pic.twitter.com/tyIxF4nyJD</a></p>&mdash; Saurabh (@saurabhHD) <a href="https://twitter.com/saurabhHD/status/1906390359841640771?ref_src=twsrc%5Etfw">March 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Feeling super blessed to receive a prize from Hitesh sir ! Now my motivation level is officially higher than my phone’s screen time 😁. <br>Thank you sir !<a href="https://twitter.com/Hiteshdotcom?ref_src=twsrc%5Etfw" aria-label="Tag Link">@Hiteshdotcom</a> <a href="https://twitter.com/piyushgarg_dev?ref_src=twsrc%5Etfw" aria-label="Tag Link">@piyushgarg_dev</a> <a href="https://t.co/tyIxF4nyJD" aria-label="TweetLink">pic.twitter.com/tyIxF4nyJD</a></p>&mdash; Saurabh (@saurabhHD) <a href="https://twitter.com/saurabhHD/status/1906390359841640771?ref_src=twsrc%5Etfw" aria-label="TweetLink">March 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Our cohorts are experience to have. When you learn from real world experienced folks, it’s totally a game changer. <br>These small talks can happen only in live classes. <br><br>Check out <a href="https://twitter.com/hashtag/chaiCode?src=hash&amp;ref_src=twsrc%5Etfw">#chaiCode</a> for our new cohorts <a href="https://t.co/I4kwrK2pFe">pic.twitter.com/I4kwrK2pFe</a></p>&mdash; Hitesh Choudhary (@Hiteshdotcom) <a href="https://twitter.com/Hiteshdotcom/status/1905574126112153860?ref_src=twsrc%5Etfw">March 28, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Our cohorts are experience to have. When you learn from real world experienced folks, it’s totally a game changer. <br>These small talks can happen only in live classes. <br><br>Check out <a href="https://twitter.com/hashtag/chaiCode?src=hash&amp;ref_src=twsrc%5Etfw" aria-label="Hashtag Link">#chaiCode</a> for our new cohorts <a href="https://t.co/I4kwrK2pFe" aria-label="TweetLink">pic.twitter.com/I4kwrK2pFe</a></p>&mdash; Hitesh Choudhary (@Hiteshdotcom) <a href="https://twitter.com/Hiteshdotcom/status/1905574126112153860?ref_src=twsrc%5Etfw" aria-label="TweetLink">March 28, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 
             </div>
 
-            <a href="https://courses.chaicode.com/learn"><button class="cohort-button" >Join Cohort Live Class</button></a>
+            <a href="https://courses.chaicode.com/learn" aria-label="CTAButton"><button class="cohort-button" >Join Cohort Live Class</button></a>
         </section>
 
         <div class="section-divider"></div>
@@ -192,7 +206,7 @@
                             <span class="originalPrice"> <strike>8999 INR</strike> </span>
                         </div>
                         <span class="discount">Save 22%</span>
-                        <a href="https://courses.chaicode.com/learn/batch/Full-Stack-Data-science-1"><button class="enrollBtn">Enroll Now</button></a>
+                        <a href="https://courses.chaicode.com/learn/batch/Full-Stack-Data-science-1" aria-label="Full Stack Data Science"><button class="enrollBtn">Enroll Now</button></a>
                     </div>
                 </div>
                 <div class="cohortVideoCards">
@@ -209,7 +223,7 @@
                             <span class="originalPrice"> <strike>7999 INR</strike> </span>
                         </div>
                         <span class="discount">Save 38%</span>
-                        <a href="https://courses.chaicode.com/learn/batch/GenAI-with-python-concept-to-deployment-projects-1"><button class="enrollBtn">Enroll Now</button></a>
+                        <a href="https://courses.chaicode.com/learn/batch/GenAI-with-python-concept-to-deployment-projects-1" aria-label="GenAI with Python | Concept to Deployment"><button class="enrollBtn">Enroll Now</button></a>
                     </div>
                 </div>
                 <div class="cohortVideoCards">
@@ -226,7 +240,7 @@
                             <span class="originalPrice"> <strike>7999 INR</strike> </span>
                         </div>
                         <span class="discount">Save 38%</span>
-                        <a href="https://courses.chaicode.com/learn/batch/DevOps-for-Developers-1"><button class="enrollBtn">Enroll Now</button></a>
+                        <a href="https://courses.chaicode.com/learn/batch/DevOps-for-Developers-1" aria-label="DevOps for developers"><button class="enrollBtn">Enroll Now</button></a>
                     </div>
                 </div>
                 <div class="cohortVideoCards">
@@ -243,7 +257,7 @@
                             <span class="originalPrice"> <strike>8999 INR</strike> </span>
                         </div>
                         <span class="discount">Save 22%</span>
-                        <a href="https://courses.chaicode.com/learn/batch/Web-Dev-Cohort-1"><button class="enrollBtn">Enroll Now</button></a>
+                        <a href="https://courses.chaicode.com/learn/batch/Web-Dev-Cohort-1" aria-label="Web Dev Cohort"><button class="enrollBtn">Enroll Now</button></a>
                     </div>
                 </div>
                 <div class="cohortVideoCards">
@@ -260,7 +274,7 @@
                             <span class="originalPrice"> <strike>599 INR</strike> </span>
                         </div>
                         <span class="discount">Save 50%</span>
-                        <a href="https://courses.chaicode.com/learn/batch/Coding-Hero-2025"><button class="enrollBtn">Enroll Now</button></a>
+                        <a href="https://courses.chaicode.com/learn/batch/Coding-Hero-2025" aria-label="Coding Hero"><button class="enrollBtn">Enroll Now</button></a>
                     </div>
                 </div>
             </div>
@@ -298,7 +312,7 @@
                                 <span class="udemy-actual-price"> <strike>₹3,099</strike> </span>
                             </div>
                             <span class="udemy-discount">83% off</span>
-                            <a href="https://www.udemy.com/course/web-dev-master/?couponCode=24T6MT180425G3"><button class="udemy-btn">Check Udemy Course</button></a>
+                            <a href="https://www.udemy.com/course/web-dev-master/?couponCode=24T6MT180425G3" aria-label="Udemy Course"><button class="udemy-btn">Check Udemy Course</button></a>
                         </div>
                         <div class="course-video">
                             <iframe src="https://www.youtube.com/embed/KZ31wDjYleI" loading="lazy"></iframe>
@@ -327,7 +341,7 @@
                                 <span class="udemy-actual-price"> <strike>₹3,099</strike> </span>
                             </div>
                             <span class="udemy-discount">83% off</span>
-                            <a href="https://www.udemy.com/course/web-dev-master/?couponCode=24T6MT180425G3"><button class="udemy-btn">Check Udemy Course</button></a>
+                            <a href="https://www.udemy.com/course/web-dev-master/?couponCode=24T6MT180425G3" aria-label="Udemy Course"><button class="udemy-btn">Check Udemy Course</button></a>
                         </div>
                         <div class="course-video">
                             <iframe src="https://www.youtube.com/embed/KZ31wDjYleI" loading="lazy"></iframe>
@@ -356,7 +370,7 @@
                                 <span class="udemy-actual-price"> <strike>₹3,099</strike> </span>
                             </div>
                             <span class="udemy-discount">83% off</span>
-                            <a href="https://www.udemy.com/course/web-dev-master/?couponCode=24T6MT180425G3"><button class="udemy-btn">Check Udemy Course</button></a>
+                            <a href="https://www.udemy.com/course/web-dev-master/?couponCode=24T6MT180425G3" aria-label="Udemy Course"><button class="udemy-btn">Check Udemy Course</button></a>
                         </div>
                         <div class="course-video">
                             <iframe src="https://www.youtube.com/embed/KZ31wDjYleI" loading="lazy"></iframe>
@@ -434,6 +448,7 @@
         </section>
 
         <br>
+        <br>
         <div class="section-divider"></div>
 
         <section class="why-chai-code">
@@ -464,11 +479,11 @@
                     <h5>Approach</h5>
                     <span>Project based courses with peer learning, bounties and many more activities.</span>
                     <div class="social-media-icons">
-                        <a href="https://www.youtube.com/@chaiaurcode"><img src="/assets/social-media-icons/yt-icon.png" alt="youtube" loading="lazy"></a>
-                        <a href="https://x.com/Hiteshdotcom"><img src="/assets/social-media-icons/twitter-icon.png" alt="twitter" loading="lazy"></a>
-                        <a href="https://www.linkedin.com/in/hiteshchoudhary/"><img src="/assets/social-media-icons/linkedin-icon.png" alt="linkedin" loading="lazy"></a>
-                        <a href="https://www.instagram.com/hiteshchoudharyofficial/?hl=en"><img src="/assets/social-media-icons/insta-icon.png" alt="instagram" loading="lazy"></a>
-                        <a href="https://github.com/hiteshchoudhary"><img src="/assets/social-media-icons/github-icon.png" alt="github" loading="lazy"></a>
+                        <a href="https://www.youtube.com/@chaiaurcode" aria-label="Youtube Channel"><img src="/assets/social-media-icons/yt-icon.png" alt="youtube" loading="lazy"></a>
+                        <a href="https://x.com/Hiteshdotcom" aria-label="Twitter Handle"><img src="/assets/social-media-icons/twitter-icon.png" alt="twitter" loading="lazy"></a>
+                        <a href="https://www.linkedin.com/in/hiteshchoudhary/" aria-label="Linkedin Profile"><img src="/assets/social-media-icons/linkedin-icon.png" alt="linkedin" loading="lazy"></a>
+                        <a href="https://www.instagram.com/hiteshchoudharyofficial/?hl=en" aria-label="Instagram Profile"><img src="/assets/social-media-icons/insta-icon.png" alt="instagram" loading="lazy"></a>
+                        <a href="https://github.com/hiteshchoudhary" aria-label="Github Profile"><img src="/assets/social-media-icons/github-icon.png" alt="github" loading="lazy"></a>
                     </div>
                 </div>
 
@@ -489,7 +504,7 @@
                     </div>
                 </div>
             </div>
-            <a href="https://courses.chaicode.com/learn"><button class="cohort-button">Join Cohorts Live Classes</button></a>
+            <a href="https://courses.chaicode.com/learn" aria-label="Join Cohorts Live Classes"><button class="cohort-button">Join Cohorts Live Classes</button></a>
         </section>
 
         <div class="section-divider"></div>
@@ -499,21 +514,21 @@
                 <h3>Topics Cloud</h3>
                 <p>You can find videos and courses on topics and much more</p>
                 <div class="topics-buttons">
-                    <a href="https://www.youtube.com/watch?v=rr9cI4u1_88"><button>Docker</button></a>
-                    <a href="https://www.youtube.com/watch?v=dZyQNy3-HjU"><button>MCP Server</button></a>
-                    <a href="https://www.youtube.com/watch?v=7XDeI5fyj3w"><button>Kubernetes</button></a>
-                    <a href="https://www.youtube.com/watch?v=Ca5DLSDfPec&list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s"><button>Python</button></a>
-                    <a href="https://www.youtube.com/watch?v=kGtEax1WQFg&list=PLRAV69dS1uWSjBBJ-egNNOd4mdblt1P4c"><button>React Native</button></a>
-                    <a href="https://www.youtube.com/watch?v=j6szNSzw4BU&list=PLu71SKxNbfoDOf-6vAcKmazT92uLnWAgy"><button>Django</button></a>
-                    <a href="https://www.youtube.com/watch?v=OgS1ZWZItno&list=PLu71SKxNbfoBAaWGtn9GA2PTw0HO0tXzq"><button>NextJS</button></a>
-                    <a href="https://www.youtube.com/watch?v=XmLOwJHFHf0&list=PLu71SKxNbfoDBNF5s-WH6aLbthSEIMhMI"><button>HTML</button></a>
-                    <a href="https://www.youtube.com/watch?v=x7ULDYs4X84"><button>Numpy</button></a>
-                    <a href="https://www.youtube.com/watch?v=aLzfFJb8rWo"><button>CSS</button></a>
-                    <a href="https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37"><button>JavaScript</button></a>
-                    <a href="https://www.youtube.com/watch?v=gCkPJTSZ9mU&list=PLu71SKxNbfoCPfgKZS8UE0MDuwiKvL8zi"><button>C++</button></a>
+                    <a href="https://www.youtube.com/watch?v=rr9cI4u1_88" aria-label="Docker Youtube Video"><button>Docker</button></a>
+                    <a href="https://www.youtube.com/watch?v=dZyQNy3-HjU" aria-label="MCP Server Youtube Video"><button>MCP Server</button></a>
+                    <a href="https://www.youtube.com/watch?v=7XDeI5fyj3w" aria-label="Kubernetes Youtube Video"><button>Kubernetes</button></a>
+                    <a href="https://www.youtube.com/watch?v=Ca5DLSDfPec&list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s" aria-label="Python Youtube Video"><button>Python</button></a>
+                    <a href="https://www.youtube.com/watch?v=kGtEax1WQFg&list=PLRAV69dS1uWSjBBJ-egNNOd4mdblt1P4c" aria-label="React Native Youtube Video"><button>React Native</button></a>
+                    <a href="https://www.youtube.com/watch?v=j6szNSzw4BU&list=PLu71SKxNbfoDOf-6vAcKmazT92uLnWAgy" aria-label="Django Youtube Video"><button>Django</button></a>
+                    <a href="https://www.youtube.com/watch?v=OgS1ZWZItno&list=PLu71SKxNbfoBAaWGtn9GA2PTw0HO0tXzq" aria-label="NextJS Youtube Video"><button>NextJS</button></a>
+                    <a href="https://www.youtube.com/watch?v=XmLOwJHFHf0&list=PLu71SKxNbfoDBNF5s-WH6aLbthSEIMhMI" aria-label="HTML Youtube Video"><button>HTML</button></a>
+                    <a href="https://www.youtube.com/watch?v=x7ULDYs4X84" aria-label="Numpy Youtube Video"><button>Numpy</button></a>
+                    <a href="https://www.youtube.com/watch?v=aLzfFJb8rWo" aria-label="CSS Youtube Video"><button>CSS</button></a>
+                    <a href="https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37" aria-label="JavaScript Youtube Video"><button>JavaScript</button></a>
+                    <a href="https://www.youtube.com/watch?v=gCkPJTSZ9mU&list=PLu71SKxNbfoCPfgKZS8UE0MDuwiKvL8zi" aria-label="C++ Youtube Video"><button>C++</button></a>
                     <!-- Placeholders - Replace with unique topics -->
-                    <a href="https://www.youtube.com/watch?v=rr9cI4u1_88"><button>Docker</button></a>
-                    <a href="https://www.youtube.com/watch?v=dZyQNy3-HjU"><button>MCP Server</button></a>
+                    <a href="https://www.youtube.com/watch?v=rr9cI4u1_88" aria-label="Docker Youtube Video"><button>Docker</button></a>
+                    <a href="https://www.youtube.com/watch?v=dZyQNy3-HjU" aria-label="MCP Server Youtube Video"><button>MCP Server</button></a>
                 </div>
             </div>
         </section>
@@ -529,7 +544,7 @@
               <div class="community-content">
                 <h3>Join Our Community</h3>
                 <p>Collab live with 80,000+ coders, share hacks, and sip chai together!</p>
-                <a href="https://hitesh.ai/discord"><button>🚀 Jump Into Discord</button></a>
+                <a href="https://hitesh.ai/discord" aria-label="Discord Link"><button>🚀 Jump Into Discord</button></a>
               </div>
             </div>
         </section>
@@ -545,7 +560,7 @@
                 </div>
                 <iframe src="https://www.youtube.com/embed/DxedlhTyR7Q" loading="lazy"></iframe>
             </div>
-            <a href="https://freeapi.app/"><button>Checkout FreeAPI Docs</button></a>
+            <a href="https://freeapi.app/" aria-label="FreeAPI Link"><button>Checkout FreeAPI Docs</button></a>
         </section>
 
         <div class="section-divider"></div>
@@ -577,8 +592,8 @@
                           Consistency With Streaks</li>
                     </ul>
                     <div class="buttons">
-                      <a href="https://apps.apple.com/in/app/chaicode/id6504993143" class="store-btn app-store">App Store</a>
-                      <a href="https://play.google.com/store/apps/details?id=com.chaicode.courses&hl=en" class="store-btn play-store">Play Store</a>
+                      <a href="https://apps.apple.com/in/app/chaicode/id6504993143" class="store-btn app-store" aria-label="App Store Link">App Store</a>
+                      <a href="https://play.google.com/store/apps/details?id=com.chaicode.courses&hl=en" class="store-btn play-store" aria-label="Play Store Link">Play Store</a>
                     </div>
                   </div>
               </div>
@@ -593,35 +608,35 @@
                 <img id="footerBtn" src="/assets/chai-assets/chaicode-white.svg" alt="ChaiCode">
                 <span>Home for programmers</span>
                 <div class="footer-social-icons">
-                    <a href="https://www.youtube.com/@chaiaurcode"><img src="/assets/social-media-icons/yt-icon.png" alt="youtube" loading="lazy"></a>
-                    <a href="https://www.linkedin.com/in/hiteshchoudhary/"><img src="/assets/social-media-icons/linkedin-icon.png" alt="linkedin" loading="lazy"></a>
-                    <a href="https://www.instagram.com/hiteshchoudharyofficial/?hl=en"><img src="/assets/social-media-icons/insta-icon.png" alt="instagram" loading="lazy"></a>
-                    <a href="https://github.com/hiteshchoudhary"><img src="/assets/social-media-icons/github-icon.png" alt="github" loading="lazy"></a>
-                    <a href="https://hitesh.ai/discord"><img src="/assets/social-media-icons/discord-logo.png" alt="Discord" loading="lazy"></a>
-                    <a href="https://x.com/ChaiCodeHQ"><img src="/assets/social-media-icons/twitter-icon.png" alt="twitter" loading="lazy"></a>
+                    <a href="https://www.youtube.com/@chaiaurcode" aria-label="Youtube Link"><img src="/assets/social-media-icons/yt-icon.png" alt="youtube" loading="lazy"></a>
+                    <a href="https://www.linkedin.com/in/hiteshchoudhary/" aria-label="Linkedin Link"><img src="/assets/social-media-icons/linkedin-icon.png" alt="linkedin" loading="lazy"></a>
+                    <a href="https://www.instagram.com/hiteshchoudharyofficial/?hl=en" aria-label="Instagram Link"><img src="/assets/social-media-icons/insta-icon.png" alt="instagram" loading="lazy"></a>
+                    <a href="https://github.com/hiteshchoudhary" aria-label="Github Link"><img src="/assets/social-media-icons/github-icon.png" alt="github" loading="lazy"></a>
+                    <a href="https://hitesh.ai/discord" aria-label="Discord Link"><img src="/assets/social-media-icons/discord-logo.png" alt="Discord" loading="lazy"></a>
+                    <a href="https://x.com/ChaiCodeHQ" aria-label="Twitter Link"><img src="/assets/social-media-icons/twitter-icon.png" alt="twitter" loading="lazy"></a>
                 </div>
                 <span>&copy; 2025 ChaiCode. All rights reserved.</span>
             </div>
     
             <div class="navigation-links">
                 <div>
-                    <a href="https://courses.chaicode.com/learn"><p>Courses</p></a>
-                    <a href="https://courses.chaicode.com/learn/view-all?show=batch&type=17"><p>Cohort</p></a>
-                    <a href="https://courses.chaicode.com/learn/batch/Coding-Hero-2025"><p>Coding Hero</p></a>
-                    <a href="https://freeapi.app/"><p>FreeAPI</p></a>
-                    <a href="https://masterji.co/"><p>Masterji</p></a>
+                    <a href="https://courses.chaicode.com/learn" aria-label="Courses Button"><p>Courses</p></a>
+                    <a href="https://courses.chaicode.com/learn/view-all?show=batch&type=17" aria-label="Batches Button"><p>Cohort</p></a>
+                    <a href="https://courses.chaicode.com/learn/batch/Coding-Hero-2025" aria-label="Coding Hero Button"><p>Coding Hero</p></a>
+                    <a href="https://freeapi.app/" aria-label="FreeAPI Button"><p>FreeAPI</p></a>
+                    <a href="https://masterji.co/" aria-label="Masterji Button"><p>Masterji</p></a>
                 </div>
                 <div>
-                    <a href="https://docs.chaicode.com/"><p>Docs</p></a>
-                    <a href="https://www.chaicode.com/privacy-policy"><p>Privacy Policy</p></a>
-                    <a href="https://www.chaicode.com/terms-of-services"><p>Terms of Service</p></a>
-                    <a href="https://www.chaicode.com/pricing-policy"><p>Pricing Policy</p></a>
-                    <a href="https://www.chaicode.com/refund-policy"><p>Refund Policy</p></a>
+                    <a href="https://docs.chaicode.com/" aria-label="Docs Button"><p>Docs</p></a>
+                    <a href="https://www.chaicode.com/privacy-policy" aria-label="Privacy Policy Button"><p>Privacy Policy</p></a>
+                    <a href="https://www.chaicode.com/terms-of-services" aria-label="Terms of Service Button"><p>Terms of Service</p></a>
+                    <a href="https://www.chaicode.com/pricing-policy" aria-label="Pricing Policy Button"><p>Pricing Policy</p></a>
+                    <a href="https://www.chaicode.com/refund-policy" aria-label="Refund Policy Button"><p>Refund Policy</p></a>
                 </div>
             </div>
         </div>
 
-        <a href="https://courses.chaicode.com/learn"><p class="chaicode-name-footer">CHAICODE</p></a>
+        <a href="https://courses.chaicode.com/learn" aria-label="ChaiCode Link"><p class="chaicode-name-footer">CHAICODE</p></a>
     </footer>
 
     <script type="module" src="js/script.js" defer></script>
