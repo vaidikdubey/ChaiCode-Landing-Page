@@ -25,7 +25,7 @@ The deployed version of the landing page can be found [here](https://chai-code-l
 ![Placement Logos](./README%20Section%20Previews/PlacementLogos.png)
 
 * 🐣 Twitter Testimonials Integration:
-![Twitter Testimonials](./README%20Section%20Previews/TwitterTestimonials.png)
+![Twitter Testimonials](./README%20Section%20Previews/Twitter.png)
 
 * 🧱 Udemy Course with Slider:
 ![Udemy Courses](./README%20Section%20Previews/UdemySection.png)
