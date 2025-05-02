@@ -393,10 +393,11 @@ header a {
     background-color: #0f0f0f;
     color: #f5f5f5;
     height: 20vh;
-    width: 30%;
+    width: 25%;
     max-width: 450px;
     position: fixed;
     padding: 1.5rem;
+    padding-right: 0.1rem;
     top: 0px;
     right: -450px;
     display: flex;
@@ -484,6 +485,10 @@ header a {
     font-size: 1.3rem;
     padding-right: 1.5rem;
     align-self: flex-end;
+  }
+
+  .menu-button-active {
+    display: none;
   }
 }
 
