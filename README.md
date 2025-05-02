@@ -13,17 +13,22 @@ The deployed version of the landing page can be found [here](https://chai-code-l
 ## 📸 Screenshots
 
 * 🔥 Loading Screen with Tea Animation:
-![Loading Screen](image.png)
+![Loading Screen](./README%20Section%20Previews/LoadingScreen.png)
+
 * 🡩‍🏫 Hero Section and Mascot:
-![Hero Section](image-1.png)
+![Hero Section](./README%20Section%20Previews/HeroSection.png)
+
 * 🎥 YouTube Embedded Cohort Previews:
-![Cohorts Section](image-2.png)
+![Cohorts Section](./README%20Section%20Previews/CohortsSection.png)
+
 * 🏢 Placement Logos Carousel:
-![Placement Logos](image-3.png)
+![Placement Logos](./README%20Section%20Previews/PlacementLogos.png)
+
 * 🐣 Twitter Testimonials Integration:
-![Twitter Testimonials](image-4.png)
+![Twitter Testimonials](./README%20Section%20Previews/TwitterTestimonials.png)
+
 * 🧱 Udemy Course with Slider:
-![Udemy Courses](image-6.png)
+![Udemy Courses](./README%20Section%20Previews/UdemySection.png)
 
 ---
 
